@@ -1,0 +1,38 @@
+.navside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .navside-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        direction: rtl;
+        li{
+            padding: 0 17px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.1s;
+
+            .color{
+                display: flex;
+                margin: auto;
+                width: 45px;
+                height: 4px;
+                background-color: rgb(0, 17, 255);
+                border-radius: 5px;
+                visibility: hidden;
+            }
+           
+        }
+        li:hover{
+            font-weight: 600;
+            transform: scale(1.1);
+
+            .color{
+                visibility: visible !important;
+            }
+        }
+    }
+}
