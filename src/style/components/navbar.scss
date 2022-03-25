@@ -1,0 +1,86 @@
+
+.navbar{
+    padding: 0 5%;
+    
+    .navbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .user-container{
+            display: flex;
+            align-items: center;
+            padding-right: 8%;
+            .userShop-border{
+                transition: 0.1s ease-in-out;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    padding-right: 2rem;
+                    cursor: pointer;
+                }
+            }
+            .userShop-border:hover{
+                transform: scale(1.2);
+            }
+            button{
+                padding: .5rem 1rem;
+                border: 1px solid rgb(37, 37, 192);
+                border-radius: 6px;
+                background-color: rgb(37, 37, 192);
+                color: #fff;
+                cursor: pointer;
+                transition: 0.2s;
+                font-weight: 600;
+            }
+            button:hover{
+                color: rgb(37, 37, 192);
+                background-color: #fff;
+            }
+
+        }
+        .search-box{
+            position: relative;
+            direction: rtl;
+            
+            img{
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                width: 27px;
+                height: 27px;
+                
+            }
+            input{
+                width: 25rem;
+                padding: .5rem 1rem;
+                border: none !important;
+                border-radius: 10px; 
+            }
+            input:focus{
+                width: 32rem; 
+                
+            }
+            input:focus-visible{
+                border: none !important; 
+                
+            }
+            
+        }
+        .site-icon{
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+            h3{
+                padding: 0 1rem;
+            }
+            img{
+                padding: .4rem 0;
+                width: 78px;
+                height: 87px;
+                cursor: pointer;
+            }
+        }
+    }
+
+  
+}
