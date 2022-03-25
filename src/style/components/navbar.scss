@@ -1,6 +1,6 @@
 
 .navbar{
-    padding: 0 5%;
+    padding: 0 4%;
     
     .navbar-container{
         display: flex;
@@ -38,7 +38,7 @@
                 }
               
                 .button-box{
-                    padding-left: 2rem;
+                    padding-left: 3rem;
                     button{
                         padding: .6rem 1rem;
                         border: 1px solid rgb(37, 37, 192);
@@ -69,15 +69,15 @@
             
             img{
                 position: absolute;
-                top: 3px;
-                left: 3px;
+                top: 5px;
+                left: 5px;
                 width: 27px;
                 height: 27px;
                 
             }
             input{
                 width: 25rem;
-                padding: .5rem 1rem;
+                padding: .7rem 1rem;
                 border: none !important;
                 border-radius: 10px; 
                 transition: 0.2s ease-in-out;
@@ -100,8 +100,8 @@
                 padding: 0 1rem;
             }
             img{
-                padding: .4rem 0;
-                width: 77px;
+                padding: .9rem 0;
+                width: 70px;
                 height: 70px;
                 cursor: pointer;
             }

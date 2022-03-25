@@ -10,10 +10,12 @@
         list-style: none;
         direction: rtl;
         li{
-            padding: 0 17px;
+            padding: 0 32px;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 16px;
             transition: 0.1s;
+            color: #7C7C7C;
 
             .color{
                 display: flex;
@@ -29,6 +31,7 @@
         li:hover{
             font-weight: 600;
             transform: scale(1.1);
+            color: #000;
 
             .color{
                 visibility: visible !important;
