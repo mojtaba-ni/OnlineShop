@@ -12,26 +12,51 @@
             padding-right: 8%;
             .userShop-border{
                 transition: 0.1s ease-in-out;
-                img{
-                    width: 30px;
-                    height: 30px;
-                    padding-right: 2rem;
-                    cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    height: 44px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                        transition: 0.1s ease-in-out;
+                    }
+                }
+                .img-box:hover{
+                    background-color: rgb(189, 184, 184);
+                    border-radius: 18px;
+
+                    img:hover{
+                        transform: scale(1.2);
+                    }
+                }
+              
+                .button-box{
+                    padding-left: 2rem;
+                    button{
+                        padding: .6rem 1rem;
+                        border: 1px solid rgb(37, 37, 192);
+                        border-radius: 6px;
+                        background-color: rgb(37, 37, 192);
+                        color: #fff;
+                        cursor: pointer;
+                        transition: 0.2s;
+                        font-weight: 600;
+                        transition: 0.2s;
+                    }
+                    button:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
-            .userShop-border:hover{
-                transform: scale(1.2);
-            }
-            button{
-                padding: .5rem 1rem;
-                border: 1px solid rgb(37, 37, 192);
-                border-radius: 6px;
-                background-color: rgb(37, 37, 192);
-                color: #fff;
-                cursor: pointer;
-                transition: 0.2s;
-                font-weight: 600;
-            }
+            
+           
             button:hover{
                 color: rgb(37, 37, 192);
                 background-color: #fff;
@@ -55,6 +80,7 @@
                 padding: .5rem 1rem;
                 border: none !important;
                 border-radius: 10px; 
+                transition: 0.2s ease-in-out;
             }
             input:focus{
                 width: 32rem; 
@@ -75,8 +101,8 @@
             }
             img{
                 padding: .4rem 0;
-                width: 78px;
-                height: 87px;
+                width: 77px;
+                height: 70px;
                 cursor: pointer;
             }
         }
