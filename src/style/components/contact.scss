@@ -1,0 +1,18 @@
+.contact{
+    background-color: rgb(70, 135, 219);
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    img{
+        position: absolute;
+        top: 22%;
+        left: 20%;
+        
+    }
+}
+.contact:hover{
+   transform: scale(1.1);
+}
