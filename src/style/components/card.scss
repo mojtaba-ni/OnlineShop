@@ -1,0 +1,49 @@
+.card-container{
+    width: 220px;
+    border-radius: 10px !important;
+    
+    .card-header{
+        img{
+            padding: 1rem 0.4rem;
+            width: 80%;
+            height: 160px;
+        }
+    }
+    .card-body{
+        padding: 0.6rem 0;
+        .body-title{
+            text-align: right;
+            position: relative;
+            h3{
+                padding: 0 0.8rem;
+                font-size: 1.3rem;
+            }
+            p{
+                position: absolute;
+                padding: 0 0.8rem;
+                top: 48%;
+                right: 0;
+                color: gray;
+                font-size: .8rem;
+                font-weight: 600;
+            }
+        }
+        .body-price{
+            display: flex;
+            direction: rtl;
+            padding-top: 0.3rem;
+            padding-right: 0.8rem;
+            
+            p{
+                font-weight: 600;
+            }
+            .price-range{
+                font-size: 0.9rem;
+                text-align: center;
+                align-items: center;
+                padding-top: 1%;
+                padding-right: 1%;
+            }
+        }
+    }
+}
