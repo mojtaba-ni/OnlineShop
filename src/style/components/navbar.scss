@@ -1,7 +1,6 @@
 
 .navbar{
-    padding: 0 4%;
-    
+    padding: 0 6%;
     .navbar-container{
         display: flex;
         align-items: center;
@@ -28,8 +27,32 @@
                         transition: 0.1s ease-in-out;
                     }
                 }
+                .imgSearch-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    height: 44px;
+                    display: none;
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        cursor: pointer;
+                        transition: 0.1s ease-in-out;
+                        transform: translateX(3px);
+                        
+                    }
+                }
+                .imgSearch-box:hover{
+                    background-color: rgb(216, 211, 211);
+                    border-radius: 22px;
+
+                    img:hover{
+                        transform: scale(1.2);
+                    }
+                }
                 .img-box:hover{
-                    background-color: rgb(189, 184, 184);
+                    background-color: rgb(216, 211, 211);
                     border-radius: 18px;
 
                     img:hover{
@@ -40,7 +63,7 @@
                 .button-box{
                     padding-left: 3rem;
                     button{
-                        padding: .6rem 1rem;
+                        padding: .8rem 1rem;
                         border: 1px solid rgb(37, 37, 192);
                         border-radius: 6px;
                         background-color: rgb(37, 37, 192);
@@ -105,8 +128,83 @@
                 height: 70px;
                 cursor: pointer;
             }
+            .menuIcon-box{
+                padding: 0 1rem;
+                display: none;
+                .menuIcon-paper{
+                    background-color:rgba(211, 209, 209, 0.884);
+                    border-radius: 8px;
+                    img{
+                        padding: 0 1rem;
+                        
+                    }
+                }
+            }
         }
     }
+}
+//! Media Query // 
+@media screen and (max-width: 900px) {
+    .navbar{
+        background-color: #e4e2e2;
+        padding: 0 1%;
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        .navbar-container{
+            .user-container{
+                padding-right: 0;
 
-  
+                .userShop-border{
+                    .imgSearch-box{
+                        display: block;
+                    }
+                    .button-box{
+                        padding-left: 0.5rem !important;
+
+                        button{
+                            padding: .7rem 0.6rem;
+                            border: 1px solid rgb(37, 37, 192);
+                            border-radius: 6px;
+                            background-color: rgb(37, 37, 192);
+                            color: #fff;
+                            cursor: pointer;
+                            transition: 0.2s;
+                            font-weight: 600;
+                            transition: 0.2s;
+                        }
+                        button:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            .search-box{
+                display: none;
+            }
+            .site-icon{
+                padding-left: 2%;
+                h3{
+                    padding: 0 0.4rem !important;
+                    font-size: 1.1rem;
+                }
+                .menuIcon-box{
+                    padding: 0 0.5rem;
+                    display: block !important;
+                    .menuIcon-paper{
+                        border-radius: 8px;
+                        padding: 3px;
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            transition: 0.1s ease;
+                        }
+                        img:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
