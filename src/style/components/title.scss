@@ -26,3 +26,12 @@
         transform: translateY(-20px);
     }
 }
+//! Media Query // 
+@media screen and (max-width: 1000px) {
+    .title-container{
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+        padding-left: 1rem ;
+        padding-right:1rem ;
+    }
+}

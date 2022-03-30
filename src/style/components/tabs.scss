@@ -1,0 +1,23 @@
+.appbar{
+   background:rgb(223, 221, 221) !important;
+   border-bottom: 2px solid blue;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+
+   .tabLable{
+       font-size: 1.2rem;
+       font-weight: 600;
+   }
+}
+//! Media Query //
+@media screen and (max-width: 1000px) {
+    .appbar{
+        
+     
+        .tabLable{
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0 1.2rem;
+        }
+     }
+}

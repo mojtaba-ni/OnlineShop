@@ -12,9 +12,6 @@
         padding-top: 2rem;
         .footer-li{
             padding: 0 1rem;
-            
-            
-            
             h3{
                 font-weight: 600;
             }
@@ -41,6 +38,20 @@
             padding-top: 2rem;
             font-weight: 600;
             color: #d3d1d1;
+        }
+    }
+}
+//! Media Query //
+@media screen and (max-width: 1000px) {
+    .footer-container{
+        .footer-box{
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .footer-li{
+                padding: 1rem;
+                
+            }
         }
     }
 }

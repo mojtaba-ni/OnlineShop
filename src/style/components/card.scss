@@ -1,12 +1,13 @@
 .card-container{
-    width: 220px;
+    width: 200px;
     border-radius: 10px !important;
-    
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
     .card-header{
         img{
             padding: 1rem 0.4rem;
             width: 80%;
-            height: 160px;
+            height: 150px;
         }
     }
     .card-body{
@@ -46,4 +47,7 @@
             }
         }
     }
+}
+.card-container:hover{
+    transform: scale(1.04);
 }

@@ -6,9 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #EAEAEA;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: #EAEAEA;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #542de0;
+  border-radius: 40px;
 }
