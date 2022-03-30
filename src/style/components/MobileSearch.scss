@@ -1,0 +1,17 @@
+.search-container{
+    display: none;
+}
+//! Media Query // 
+@media screen and (max-width: 900px) {
+    .search-container{
+        display: block;
+        direction: rtl ;
+        input{
+            width: 92%;
+            padding: .7rem 1rem;
+            border: none !important;
+            border-radius: 10px; 
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
