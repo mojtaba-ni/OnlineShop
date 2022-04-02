@@ -17,6 +17,11 @@
             transition: 0.1s;
             color: #7C7C7C;
 
+           .navside-link{
+               text-decoration:none;
+               color: #7C7C7C;
+           }
+           
             .color{
                 display: flex;
                 margin: auto;
@@ -35,6 +40,13 @@
 
             .color{
                 visibility: visible !important;
+            }
+            .navside-link{
+                color: #000;
+                
+                .link-a{
+                    padding-bottom: 10rem !important;
+                }
             }
         }
     }

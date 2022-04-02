@@ -6,11 +6,14 @@ import Card2 from '../assets/Card-list/card2.png'
 import Card2Hover from'../assets/Card-list/card2Hover.png'
 import Card3 from '../assets/Card-list/card3.png'
 import Card3Hover from '../assets/Card-list/card3Hover.png'
+import { motion } from 'framer-motion'
+import {CardListAnimate} from "../utils/Animation"
 import '../style/layout/cardList.scss'
 
 const CardList = () => {
   return (
-    <div className='cardlist-container'>
+    <motion.div className='cardlist-container'
+    variants={CardListAnimate} initial="hidden" whileInView="visible" viewport={{once:true}}>
         <div className="cardlist-li">
             <CardP Card={Card1} CardHover={Card1Hover}/>
         </div>
@@ -20,7 +23,7 @@ const CardList = () => {
         <div className="cardlist-li">
             <CardP Card={Card3} CardHover={Card3Hover}/>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

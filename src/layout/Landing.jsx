@@ -9,29 +9,34 @@ import send from '../assets/noun-send.svg'
 import complete from '../assets/noun-complete.svg'
 import Card from '../components/Card'
 import Button from '../components/Button'
-import '../style/layout/landing.scss'
 import CardList from './CardList'
 import Footer from '../components/footer'
 import About from './About'
 import Title from '../components/title'
 import Tabs from '../components/Tabs'
+import { motion } from 'framer-motion'
+import {ImgAnimate,ImgAnimateRight,PerformAnimate,SpecialAnimate} from "../utils/Animation"
+import '../style/layout/landing.scss'
 
 const Landing = () => {
   return (
     <>
         <div className='landing-container'>
-            <img className='landing-img2'
+            <motion.img className='landing-img2'
                 src={part2}
                 onMouseOver={e => (e.currentTarget.src = part2Hover)}
                 onMouseOut={e => (e.currentTarget.src = part2)}
+                variants={ImgAnimate}   initial="hidden"    whileInView="visible" viewport={{once:true}}
             />
-            <img className='landing-img1'
+            <motion.img className='landing-img1'
                 src={part1}
                 onMouseOver={e => (e.currentTarget.src = part1Hover)}
                 onMouseOut={e => (e.currentTarget.src = part1)}
+                variants={ImgAnimateRight}   initial="hidden"    whileInView="visible" viewport={{once:true}}
             />
         </div>
-        <div className="landing-perform">
+        <motion.div className="landing-perform"
+        variants={PerformAnimate}   initial="hidden"  whileInView="visible" viewport={{once:true}}>
             <div className="perform-li">
                 <div className="perform-desc">
                     <h3>تضمین اصالت کالا</h3>
@@ -69,9 +74,10 @@ const Landing = () => {
                     <img src={complete} alt="" />
                 </div>
             </div>
-        </div>
+        </motion.div>
         <div className="landing-spacial">
-            <div className="spacial">
+            <motion.div className="spacial"
+            variants={SpecialAnimate}   initial="hidden" whileInView="visible" >
                 <div className="speacial-desc">
                     <div className="spacial-title">
                         <div className="title-header">
@@ -94,7 +100,7 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
         <CardList/>
         <div className="tabs-box">

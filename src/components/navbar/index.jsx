@@ -5,9 +5,11 @@ import shopIcon from '../../assets/navbar/iconshop.png'
 import hamburger from '../../assets/navbar/more.png'
 import Paper from '@material-ui/core/Paper';
 import Navside from '../navside'
-import '../../style/components/navbar.scss'
 import MobileSearch from '../MobileSearch'
 import Sidebar from '../sidebar'
+import { motion } from 'framer-motion'
+import { NavbarAnimate } from '../../utils/Animation'
+import '../../style/components/navbar.scss'
 
 
 export default () => {
@@ -22,7 +24,8 @@ export default () => {
   }
   return (
     <div className='navbar'>
-      <div div className="navbar-container">
+      <motion.div className="navbar-container" 
+      variants={NavbarAnimate} initial="hidden" animate="visible">
         <div className="user-container">
           <div className='userShop-border'>
             <div className="imgSearch-box">
@@ -49,7 +52,7 @@ export default () => {
             </Paper>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Navside/>
       {mobileSearch && <MobileSearch/>}
       {showSidebar && <Sidebar/>}

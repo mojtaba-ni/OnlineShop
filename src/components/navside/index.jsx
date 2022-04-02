@@ -1,20 +1,20 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { NavbarAnimate } from '../../utils/Animation'
 import '../../style/components/navside.scss'
 
 export default () => {
-    const [showBorder, setShowBorder] = useState(false)
-    const handleBorderButtom = () => {
-        setShowBorder(!showBorder)
-    }
+    
   return (
-        <nav className='navside'>
+        <motion.nav className='navside' variants={NavbarAnimate} initial="hidden" animate="visible">
             <ul className='navside-box'>
                 <li>
-                    <p>صفحه اصلی</p>
+                    <Link to={'/'} className='navside-link'><p>صفحه اصلی</p></Link>
                     <div className='color'></div>
                 </li>
                 <li>
-                    <p>دسته بندی محصولات</p>
+                    <Link to={'/Category'} className='navside-link'><p>دسته بندی محصولات</p></Link>
                     <div className='color'></div>
                 </li>
                 <li>
@@ -30,7 +30,7 @@ export default () => {
                     <div className='color'></div>
                 </li>
             </ul>
-        </nav>
+        </motion.nav>
   )
 }
 

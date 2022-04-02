@@ -3,12 +3,16 @@ import telegram from '../../assets/telegram.png'
 import webSite from '../../assets/webSite.png' 
 import instagram from '../../assets/instagram.png' 
 import Contact from '../contact'
+import { motion } from 'framer-motion'
+import { OpacityAnimate,FooterContactAnimate} from '../../utils/Animation'
 import '../../style/components/footer.scss'
 
 export default () => {
   return (
     <div className='footer-container'>
-        <div className="footer-box">
+        <motion.div className="footer-box"
+        variants={OpacityAnimate} initial="hidden" whileInView="visible"
+        viewport={{once:true}}>
             <div className="footer-li">
                 <h3>درباره ما</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut suscipit sint recusandae nobis est expedita voluptatibus dolor, similique blanditiis reiciendis nesciunt quas incidunt minus eius, nostrum minima, repellendus deserunt!</p>
@@ -28,8 +32,9 @@ export default () => {
                 <p>تماس با ما</p>
                 <p>درباره ما</p>
             </div>
-        </div>
-        <div className="contact-box">
+        </motion.div>
+        <motion.div className="contact-box"
+        variants={FooterContactAnimate} initial="hidden" whileInView="visible" viewport={{once:true}}>
             <div className="contact-li">
                 <Contact src={telegram}/>
             </div>
@@ -39,9 +44,12 @@ export default () => {
             <div className="contact-li">
                 <Contact src={instagram}/>
             </div>
-        </div>
+        </motion.div>
         <div className='footer-end'>
-            <h4>کلیه حقوق متعلق به فروشگاه آنلاین شاپ است</h4>
+            <motion.h4 variants={FooterContactAnimate} initial="hidden" whileInView="visible"
+            viewport={{once:true}}>
+                کلیه حقوق متعلق به فروشگاه آنلاین شاپ است
+            </motion.h4>
         </div>
     </div>
   )

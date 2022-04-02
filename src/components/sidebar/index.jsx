@@ -8,12 +8,25 @@ export default () => {
             <div className="button-box">
               <button>حساب کاربری</button>
             </div>
+            <div className="border"><p className='border-line'></p></div>
         </div>
-        <nav>
-            <a href="">s</a>
-            <a href="">ss</a>
-            <a href="">sss</a>
-            <a href="">ssss</a>
+        <nav className='nav-container'>
+            <div className="nav-li">
+              <a href="">صفحه اصلی</a>
+            </div>
+            <div className="nav-li">
+              <a href="">دسته بندی محصولات</a>
+            </div>
+            <div className="nav-li">
+              <a href="">علاقه مندی ها</a>
+            </div>
+            <div className="nav-li">
+              <a href="">ارتباط با ما</a>
+            </div>
+            <div className="nav-li">
+              <a href="">درباره ما</a>
+            </div>
+            <div className="border"><p className='border-line'></p></div>
         </nav>
     </div>
   )
