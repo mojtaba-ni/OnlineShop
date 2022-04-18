@@ -20,7 +20,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 3rem 0;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
             .button-box{
                 button{
                     padding: .8rem 1rem;
@@ -38,7 +39,7 @@
                 }
             }
             .border{
-                padding-top: 2rem;
+                padding-top: 1rem;
                 .border-line{
                     background-color: gray;
                     width: 200px;
@@ -49,7 +50,7 @@
         .nav-container{
             display: flex;
             justify-content: center;
-            align-items: center;
+            direction: rtl;
             flex-direction: column;
             
             .nav-li{
@@ -60,7 +61,7 @@
                     color: rgb(36, 36, 194);
                     padding: 0 0.7rem;
                     transition: 0.1s ease-in-out;
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
             .nav-li:hover{

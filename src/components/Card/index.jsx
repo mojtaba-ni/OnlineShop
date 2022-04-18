@@ -1,21 +1,22 @@
 import React from 'react'
 import Paper from '@material-ui/core/Paper';
-import playstation4 from '../../assets/playstation4.png';
+import ps4 from '../../assets/cardPr/monitor1.png'
 import '../../style/components/card.scss'
 
-export default () => {
+export default ({width,img,product,height}) => {
   return (
-    <Paper className='card-container'>
+    <Paper className='card-container' style={{width: `${width}`}}>
         <div className="card-header">
-            <img src={playstation4} alt="" />
+            {img && <img src={img} alt=""  style={{ height:`${height}`}} />}
+            {product && !product.change && <img src={product.img} alt="" />  }
         </div>
         <div className="card-body">
             <div className="body-title">
-                <h3>Xbox series X</h3>
-                <p>کنسول بازی مایکروسافت</p>
+                <h3>{product && product.title}</h3>
+                <p>{product && product.titleP}</p>
             </div>
             <div className="body-price">
-                <p>1290000</p>
+                <p>{product && product.price}</p>
                 <p className='price-range'>تومان</p>
             </div>
         </div>
