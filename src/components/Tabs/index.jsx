@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Slider from '../slider'
+import { Pics,Monitor } from '../../utils/gamePr';
 import '../../style/components/tabs.scss'
 
 function TabPanel(props) {
@@ -68,13 +68,13 @@ export default () => {
         </Tabs>
       </div>
       <TabPanel value={value} index={0}>
-        <Slider/> 
+        <Slider  products={Pics} /> 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Slider/>
+        <Slider products={Monitor} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Slider/>
+        <Slider products={Pics} />
       </TabPanel>
     </div>
   );

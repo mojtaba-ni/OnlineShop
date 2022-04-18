@@ -24,7 +24,7 @@ function SampleNextArrow(props) {
       />
     );
   }
-export default class Responsive extends Component {
+export default class Responsive extends Component{
   render() {
     var settings = {
       dots: true,
@@ -69,33 +69,15 @@ export default class Responsive extends Component {
         }
       ]
     };
+    const {products} = this.props
     return (
       <div className="slider-container">
         <Slider {...settings}>
-          <div>
-            <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
-          <div>
-          <Card/>
-          </div>
+          {products.map((product)=>(
+            <div key={product.id}>
+              <Card product={product}/>
+            </div>
+          ))}
         </Slider>
       </div>
     );

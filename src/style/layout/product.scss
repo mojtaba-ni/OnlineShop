@@ -1,0 +1,42 @@
+.product-container{
+    padding: 0 4rem;
+    display: flex;
+
+    .products-box{
+       display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       height: 100%;
+        gap: 20px;
+        text-align: center;
+       
+    }
+    .filter-box{
+        padding: 0 2rem;
+        width: 100%;
+        
+        .filter-title{
+            direction: rtl;
+            background-color: #4D1DFE;
+            color: #fff;
+            border-radius: 6px;
+            h4{
+                padding: .8rem 1.5rem .9rem 1rem;
+                font-size: 1.1rem;
+                margin: 0;
+                font-weight: 500;
+            }   
+        }
+        .filter-container{
+           display: flex;
+           
+           flex-direction: column;
+            .accordionBox{
+               padding: .2rem 1rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               
+            }
+        }
+    }
+}

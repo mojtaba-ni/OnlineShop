@@ -10,11 +10,11 @@ import complete from '../assets/noun-complete.svg'
 import Card from '../components/Card'
 import Button from '../components/Button'
 import CardList from './CardList'
-import Footer from '../components/footer'
 import About from './About'
 import Title from '../components/title'
 import Tabs from '../components/Tabs'
 import { motion } from 'framer-motion'
+import { spechials } from '../utils/gamePr'
 import {ImgAnimate,ImgAnimateRight,PerformAnimate,SpecialAnimate} from "../utils/Animation"
 import '../style/layout/landing.scss'
 
@@ -89,15 +89,12 @@ const Landing = () => {
                         </div>
                     </div>
                     <div className="spacial-list">
-                        <div className="card-li">
-                            <Card/>
-                        </div>
-                        <div className="card-li">
-                            <Card/>
-                        </div>
-                        <div className="card-li">
-                            <Card/>
-                        </div>
+                        {spechials.map((spechial)=>(
+                            <div className="card-li">
+                                <Card product={spechial}/>
+                            </div>
+                        ))
+                        }
                     </div>
                 </div>
             </motion.div>
@@ -108,7 +105,7 @@ const Landing = () => {
         </div>
         <About/>
         <Title/>
-        <Footer/>
+        
     </>
   )
 }

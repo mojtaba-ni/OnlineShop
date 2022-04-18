@@ -15,7 +15,9 @@ export default () => {
         viewport={{once:true}}>
             <div className="footer-li">
                 <h3>درباره ما</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut suscipit sint recusandae nobis est expedita voluptatibus dolor, similique blanditiis reiciendis nesciunt quas incidunt minus eius, nostrum minima, repellendus deserunt!</p>
+                <p>
+                استفاده از فناوری برای خلق تجربه خوشایند خرید برای مشتریان، توانمندسازی کسب‌وکارهای ایرانی و کمک به گذار آن‌ها به اقتصاد دیجیتال برای دستیابی به بازاری به‌وسعت ایران و خاورمیانه. همچنین رشد شایستگی‌های حرفه‌ای کارکنان مجموعه یکی از ماموریت‌های ماست
+                </p>
             </div>
             <div className="footer-li">
                 <h3>راه های ارتباطی</h3>

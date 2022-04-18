@@ -17,7 +17,7 @@ export const NavbarAnimate = {
 export const ImgAnimate = {
     hidden : {
         opacity: 0,
-        x: -150,
+        x: -160,
 
     },
     visible : {
@@ -25,8 +25,8 @@ export const ImgAnimate = {
         x:0,
 
         transition:{
-            duration:.6,
-            delay:0.3,
+            duration:.7,
+            delay:0.5,
             type: "tween" 
         }
     }
@@ -34,7 +34,7 @@ export const ImgAnimate = {
 export const ImgAnimateRight = {
     hidden : {
         opacity: 0,
-        x: 150,
+        x: 160,
 
     },
     visible : {
@@ -42,8 +42,8 @@ export const ImgAnimateRight = {
         x:0,
 
         transition:{
-            duration:.6,
-            delay:0.3,
+            duration:.7,
+            delay:0.5,
             type: "tween" 
         }
     }
@@ -59,8 +59,8 @@ export const PerformAnimate = {
         y:0,
 
         transition:{
-            duration:1.3,
-            delay:0.9,
+            duration:1.5,
+            delay:1,
             type: "tween" 
         }
     }
@@ -94,8 +94,8 @@ export const CardListAnimate = {
         y:0,
 
         transition:{
-            delay:1,
-            duration:1.2,
+            delay:1.3,
+            duration:1.4,
             type: 'spring',
             stiffness: 60, 
         }
